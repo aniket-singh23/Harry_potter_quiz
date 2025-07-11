@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Putter</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body><style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('/static/hogwart.jpg');
+    }
+
+    div {
+        background: linear-gradient(to left, #93A5CF , #E4EfE9);
+        padding: 30px 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 90%;
+        margin-left: 950px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        font-size: 22px;
+        margin-bottom: 25px;
+        font-family: 'Georgia', serif;
+    }
+
+    label {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #d40b0b;
+        font-size: 16px;
+    }
+
+    input[type="radio"] {
+        margin: 10px 8px 10px 0;
+        accent-color: #ff4747;
+    }
+
+    .Submit {
+        background-color: red;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 30px;
+        display: block;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .Submit:hover {
+        background-color: #d61414;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
+        transform: scale(1.05);
+    }
+
+    .form {
+        padding: 10px 0;
+    }
+</style>
+
+    <div>
+
+       <h2>WELCOME TO THE HARI PUTTER QUIZ! ANSWER IT WISELY</h2>
+        <form class="form" action="/result" method="post">
+            <label for="Question1">Q1 : What do you value most?</label><br>
+            <input type="radio" name="q1" value="Bravery">Bravery<br>
+            <input type="radio" name="q1" value="Ambitious">Ambitious<br>
+            <input type="radio" name="q1" value="Intelligence">Intelligence<br>
+            <input type="radio" name="q1" value="Loyalty">Loyalty<br>
+
+            <label for="Question2">Q2 : Pick a magical creature</label><br>
+            <input type="radio" name="q2" value="Dragon">Dragon<br>
+            <input type="radio" name="q2" value="Badger">Badger<br>
+            <input type="radio" name="q2" value="Snake">Snake<br>
+            <input type="radio" name="q2" value="Owl">Owl<br>
+
+            <label for="Question3">Q3 : Favorite subject at Hogwarts?</label><br>
+            <input type="radio" name="q3" value="Defense">Defense<br>
+            <input type="radio" name="q3" value="Potions">Potions<br>
+            <input type="radio" name="q3" value="Charms">Charms<br>
+            <input type="radio" name="q3" value="Herbology">Herbology<br>   
+            
+            <button type="submit" class="Submit">Submit</button>
+        </form>
+
+        
+    </div>
+</body>
+</html>
